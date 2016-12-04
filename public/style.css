@@ -16,18 +16,64 @@
   margin-top: 50px;
 }
 
-img{
-  height: 280px;
-  width: 280px;
+@keyframes hexaFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.hexa img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+.hexa img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+.hexa img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+.hexa img:nth-of-type(4) {
+  animation-delay: 0;
+}
+
+.hexa {
+  position:relative;
+  -webkit-animation-name: hexaFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+  animation-name: hexaFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
 }
 
 .clip-polygon{
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  height:280px;
+  width:280px;
+  position:absolute;
+  left: 0;
 }
 
 #description{
   text-align: center;
   margin-top: 100px;
   font-weight: 500;
+}
+
+.opening{
+  padding: 0 50px;
 }

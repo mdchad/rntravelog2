@@ -18,16 +18,16 @@ app.get('/about', function(req, res) {
   res.render('about');
 });
 
-// app.get('/package', function(req, res) {
-//   res.render('package');
-// });
+app.get('/package', function(req, res) {
+  res.render('package');
+});
 //
 // app.get('/site', function(req, res) {
 //   res.render('site');
 // });
 //
-// app.get('/contact', function(req, res) {
-//   res.render('contact');
-// });
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
 
 var server = app.listen(process.env.PORT || 3000);
