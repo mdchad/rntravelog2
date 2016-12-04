@@ -1,0 +1,33 @@
+.navbar{
+  margin-top: 30px;
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ef2f2f !important;
+}
+
+.navbar-default .navbar-brand>span {
+  color: #ef2f2f !important;
+}
+
+.main{
+  margin-top: 50px;
+}
+
+img{
+  height: 280px;
+  width: 280px;
+}
+
+.clip-polygon{
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#description{
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 500;
+}
